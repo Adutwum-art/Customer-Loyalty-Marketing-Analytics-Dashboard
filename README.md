@@ -22,14 +22,6 @@ The goal is to help stakeholders answer:
 
 ---
 
-## 🛠️ Tools & Technologies
-
-* Google Looker Studio
-* Data Blending (Multiple datasets)
-* CSV Data (IBM Sample Dataset)
-
----
-
 ## 📂 Dataset
 
 * CustomerLoyaltyProgram.csv
@@ -78,7 +70,7 @@ The dashboard is structured into three key analytical areas:
 - Includes **Order Year slider**  
 - Shows global sales distribution  
 
-📌 Insight: High sales concentration in North America and Europe.
+📌 Insight: Sales activity is heavily concentrated in North America and Western Europe, with key urban hubs driving the majority of transactions across multiple product lines.
 
 ---
 
@@ -89,7 +81,7 @@ The dashboard is structured into three key analytical areas:
 - Color intensity represents **sales volume**
 - Identifies regional hotspots
 
-📌 Insight: Strong clustering in major metropolitan areas.
+📌 Insight: High-density sales clusters are visible in major metropolitan areas, indicating strong urban demand patterns and potential market saturation in these regions.
 
 ---
 
@@ -100,7 +92,7 @@ The dashboard is structured into three key analytical areas:
 - Shows product performance across regions  
 - Includes time filtering capability  
 
-📌 Insight: Certain product lines dominate specific regions over time.
+📌 Insight: Product demand varies significantly across regions and time periods, with certain product lines consistently dominating specific geographic markets.
 
 ---
 
@@ -111,9 +103,7 @@ The dashboard is structured into three key analytical areas:
 - Compares quantity sold across gender  
 - Includes dropdown filter  
 
-📌 Insight: Balanced purchasing behavior across genders.
-
----
+📌 Insight: Sales distribution is highly balanced across genders, with female customers contributing slightly more purchases (199.2k vs 196.9k), indicating no significant gender bias in buying behavior.
 
 ### 📈 Revenue vs Unit Price by City
 
@@ -122,9 +112,7 @@ The dashboard is structured into three key analytical areas:
 - Bars → Revenue  
 - Line → Unit Sale Price  
 
-📌 Insight: Some cities generate high revenue despite lower unit prices.
-
----
+📌 Insight: Several cities generate high revenue despite relatively lower unit prices, suggesting that sales volume—not pricing—is the primary driver of revenue performance in these markets.
 
 ### 🧱 Product Sales Hierarchy (Treemap)
 
@@ -133,15 +121,58 @@ The dashboard is structured into three key analytical areas:
 - Hierarchical view: Country → State → City  
 - Optional metric: Revenue  
 
-📌 Insight: Reveals dominant regions and product clusters.
-
+📌 Insight: Sales are unevenly distributed across regions, with a few key states and cities contributing disproportionately to total revenue, highlighting opportunities for targeted market expansion.
 ---
 
-## ⚙️ Tools & Technologies
+## 🛠️ Tools & Technologies
 
 - Google Looker Studio  
 - Data Blending (Multiple datasets)  
 - Interactive Filters & Controls  
 - Geographic Visualizations  
+- CSV Data (IBM Sample Dataset)  
 
 ---
+## 📁 Project Structure
+
+customer-sales-dashboard/
+│
+├── data/
+│   ├── CustomerLoyaltyProgram.csv
+│   ├── cust_loyalty_table.csv
+│   └── cust_table.csv
+│
+├── screenshots/
+│   ├── bubble_map_with_slicer.png
+│   ├── heatmap_quantity_sold.png
+│   ├── heatmap_productline.png
+│   ├── quantity_by_gender.png
+│   ├── dropdown_filter_gender.png
+│   ├── revenue_vs_price_city.png
+│   └── treemap_product_hierarchy.png
+│
+└── README.md
+
+  🔍 Key Business Takeaways
+  
+- Urban regions dominate overall sales performance  
+- Revenue growth is largely volume-driven rather than price-driven  
+- Product line performance varies significantly by region  
+- Customer purchasing behavior is evenly distributed across genders  
+- High-performing regions present opportunities for deeper market penetration
+
+  
+## 🚀 Key Skills Demonstrated
+
+- Data Visualization & Dashboard Design  
+- Data Blending (Combining Multiple Data Sources)  
+- Interactive Dashboard Development (Filters, Slicers, Controls)  
+- Geospatial Analysis (Maps & Heatmaps)  
+- Business Insight Generation & Storytelling  
+- Data-Driven Decision Support
+
+  ## 📌 Conclusion
+
+This dashboard showcases the ability to translate raw transactional data into actionable business insights through effective visualization and interactivity. By integrating multiple data sources and applying geospatial and analytical techniques, the project provides a comprehensive view of sales performance, customer behavior, and regional trends.
+
+The findings emphasize the importance of volume-driven revenue, regional sales concentration, and balanced customer participation, offering valuable direction for strategic decision-making and market expansion.
